@@ -1,7 +1,8 @@
-CREATE DATABASE sof3021_jpa_tren_lop;
+CREATE DATABASE B8;
 GO
-USE sof3021_jpa_tren_lop;
+USE B8;
 GO
+
 CREATE TABLE category (
     id BIGINT IDENTITY NOT NULL,
     category_code varchar(100) NULL,
@@ -30,6 +31,7 @@ INSERT INTO category
 (category_code, category_name)
 VALUES( N'C03', N'Hang 3');
 
+SET IDENTITY_INSERT product ON
 
 INSERT INTO product
 (id, category_id, product_code, product_name, price, description)
@@ -41,7 +43,6 @@ INSERT INTO product
 (id, category_id, product_code, product_name, price, description)
 VALUES(3, 2, N'P03', N'san pham 3', 13.0, N'ababab');
 
-SET IDENTITY_INSERT product ON
 
 SELECT * FROM product
 SELECT * FROM category
