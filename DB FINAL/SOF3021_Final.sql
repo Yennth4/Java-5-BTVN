@@ -113,6 +113,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+
 /****** Object:  Table [dbo].[giao_ca]    Script Date: 10/05/2024 7:18:21 CH ******/
 SET ANSI_NULLS ON
 GO
@@ -572,3 +573,6 @@ INSERT [dbo].[tai_khoan_quyen_han] ([id], [id_quyen_han], [id_tai_khoan], [ma_su
 INSERT [dbo].[tai_khoan_quyen_han] ([id], [id_quyen_han], [id_tai_khoan], [ma_su_dung], [mo_ta], [trang_thai]) VALUES (10, 5, 15, N'nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas', N'tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra', N'5')
 SET IDENTITY_INSERT [dbo].[tai_khoan_quyen_han] OFF
 
+
+
+select * from dich_vu
