@@ -2,7 +2,7 @@ CREATE DATABASE SOF3021_Final
 GO
 USE [SOF3021_Final]
 GO
-/****** Object:  Table [dbo].[chi_tiet_hoa_don]    Script Date: 10/05/2024 7:18:20 CH ******/
+select * from dat_phong
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
